@@ -27,7 +27,10 @@ from django_stats2.fields import StatField
 
 class MyModel(StatsMixin, models.Model):
      # ... your fields here
+     # Declare the names of your stat fields
+     stat_fields = ['read_count']
 
+     # Declare stat fields
      read_count = StatField()
 ```
 
