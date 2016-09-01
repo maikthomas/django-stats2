@@ -10,5 +10,6 @@ class Note(StatsMixin, models.Model):
     title = models.CharField(max_length=128)
     content = models.TextField()
 
+    stat_fields = ['reads', 'edits']
     reads = StatField()
     edits = StatField()
